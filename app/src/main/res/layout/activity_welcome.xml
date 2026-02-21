@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFF8E1"
+    tools:context=".WelcomeActivity">
+
+
+    <!-- Card Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:padding="25dp"
+        android:layout_margin="16dp">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/tVWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome User"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FBC02D"
+            android:gravity="center"
+            android:paddingBottom="20dp"/>
+
+
+        <!-- Mail -->
+        <TextView
+            android:id="@+id/tvMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mail : example@gmail.com"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:padding="10dp"
+            android:background="#FFFDE7"/>
+
+
+        <!-- Space -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+
+
+        <!-- User ID -->
+        <TextView
+            android:id="@+id/tvUnique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User ID : 12345"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:padding="10dp"
+            android:background="#FFFDE7"/>
+
+    </LinearLayout>
+
+</LinearLayout>

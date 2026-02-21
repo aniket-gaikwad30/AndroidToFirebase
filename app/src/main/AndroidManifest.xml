@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DatabaseFirebase">
         <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

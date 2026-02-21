@@ -1,9 +1,11 @@
 package com.example.databasefirebase
 
+import android.content.Intent
 import android.os.Bundle
 import android.renderscript.ScriptGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -31,6 +33,12 @@ class MainActivity : AppCompatActivity() {
         val email = findViewById<TextInputEditText>(R.id.email)
         val password = findViewById<TextInputEditText>(R.id.password)
         val uniqueid = findViewById<TextInputEditText>(R.id.uniqueid)
+        val signinbtn = findViewById<Button>(R.id.signin)
+
+        signinbtn.setOnClickListener {
+            val signInActivity = Intent(this, SignIn::class.java)
+            startActivity(signInActivity)
+        }
 
     btn.setOnClickListener {
         val Name= name.text.toString()
@@ -50,6 +58,11 @@ class MainActivity : AppCompatActivity() {
         }.addOnFailureListener {
             Toast.makeText(this,"Failed to Add User", Toast.LENGTH_SHORT).show()
         }
+
+
+
+
+
     }
 
     }

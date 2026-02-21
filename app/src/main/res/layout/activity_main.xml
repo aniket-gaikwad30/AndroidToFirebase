@@ -110,4 +110,14 @@
         android:layout_gravity="center"
 
         android:text="Sign up" />
+
+    <Button
+        android:id="@+id/signin"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Click to Sign In"
+        ></Button>
 </LinearLayout>
